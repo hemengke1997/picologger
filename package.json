@@ -1,17 +1,17 @@
 {
-  "name": "ts-template",
+  "name": "browser-logger",
   "type": "module",
   "version": "0.0.0",
   "packageManager": "pnpm@7.30.0",
-  "description": "a template for typescript project or plugin",
+  "description": "A colorful logger used in browser",
   "author": "hemengke <https://github.com/hemengke1997>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hemengke1997/ts-template.git"
+    "url": "git+https://github.com/hemengke1997/browser-logger.git"
   },
   "keywords": [
-    "TODO"
+    "browser-logger"
   ],
   "exports": {
     ".": {
@@ -36,7 +36,11 @@
     "lint": "eslint .",
     "up": "taze -I -w -r",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
-    "bump": "bumpp packages/*/package.json -c -p -t --all -x \"pnpm run changelog\""
+    "bump": "bumpp package.json -c -p -t --all -x \"pnpm run changelog\""
+  },
+  "dependencies": {
+    "@minko-fe/style-object-to-string": "^0.0.3",
+    "dayjs": "^1.11.7"
   },
   "devDependencies": {
     "@minko-fe/eslint-config": "1.2.32",

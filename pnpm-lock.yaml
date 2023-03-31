@@ -5,15 +5,20 @@ importers:
   .:
     specifiers:
       '@minko-fe/eslint-config': 1.2.32
+      '@minko-fe/style-object-to-string': ^0.0.3
       '@minko-fe/tsconfig': ^1.2.32
       bumpp: ^9.0.0
       conventional-changelog-cli: ^2.2.2
+      dayjs: ^1.11.7
       eslint: 8.36.0
       pnpm: ^7.30.0
       taze: ^0.9.1
       tsup: ^6.7.0
       typescript: ^5.0.2
       vitest: ^0.29.7
+    dependencies:
+      '@minko-fe/style-object-to-string': 0.0.3
+      dayjs: 1.11.7
     devDependencies:
       '@minko-fe/eslint-config': 1.2.32_eslint@8.36.0
       '@minko-fe/tsconfig': 1.2.32_typescript@5.0.2
@@ -709,6 +714,12 @@ packages:
     dependencies:
       prettier: 2.8.4
     dev: true
+
+  /@minko-fe/style-object-to-string/0.0.3:
+    resolution: {integrity: sha512-k8EngshIRQLumZ3qlni6aMwjR8nC7NsFOImOr5jvVAbIPJCXHI9Hr67p2KcuD2b1Ery5EFHidSLNYRMlNzLKow==}
+    dependencies:
+      csstype: 3.1.1
+    dev: false
 
   /@minko-fe/tsconfig/1.2.32_typescript@5.0.2:
     resolution: {integrity: sha512-EFPrQnXrS6tCYolY1Ijq6B+L3urbKcT7k9lGDcAG+g5vYYV24JGWQSfqcVhCDQmVPiSm61Qq81rfVNZYEBCjeg==}
@@ -1766,7 +1777,6 @@ packages:
 
   /csstype/3.1.1:
     resolution: {integrity: sha512-DJR/VvkAvSZW9bTouZue2sSxDwdTN92uHjqeKVm+0dAqdfNykRzQ95tay8aXMBAAPpUiq4Qcug2L7neoRh2Egw==}
-    dev: true
 
   /dargs/7.0.0:
     resolution: {integrity: sha512-2iy1EkLdlBzQGvbweYRFxmFath8+K7+AKB0TlhHWkNuH+TmovaMH/Wp7V7R4u7f4SnX3OgLsU9t1NI9ioDnUpg==}
@@ -1776,6 +1786,10 @@ packages:
   /dateformat/3.0.3:
     resolution: {integrity: sha512-jyCETtSl3VMZMWeRo7iY1FL19ges1t55hMo5yaam4Jrsm5EPL89UQkoQRyiI+Yf4k8r2ZpdngkV8hr1lIdjb3Q==}
     dev: true
+
+  /dayjs/1.11.7:
+    resolution: {integrity: sha512-+Yw9U6YO5TQohxLcIkrXBeY73WP3ejHWVvx8XCk3gxvQDCTEmS48ZrSZCKciI7Bhl/uCMyxYtE9UqRILmFphkQ==}
+    dev: false
 
   /debug/3.2.7:
     resolution: {integrity: sha512-CFjzYYAi4ThfiQvizrFQevTTXHtnCqWfe7x1AhgEscTz6ZbLbfoLRLPugTQyBth6f8ZERVUSyWHFD/7Wu4t1XQ==}
