@@ -1,5 +1,5 @@
 {
-  "name": "browser-logger",
+  "name": "picologger",
   "type": "module",
   "version": "0.0.1",
   "packageManager": "pnpm@7.30.0",
@@ -8,10 +8,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hemengke1997/browser-logger.git"
+    "url": "git+https://github.com/hemengke1997/picologger.git"
   },
   "keywords": [
-    "browser-logger"
+    "picologger"
   ],
   "exports": {
     ".": {

@@ -1,12 +1,12 @@
-# browser-logger
+# picologger
 
 > A colorful logger used in browser
 
 ## Usage
 
 ```ts
-import { ClientLogger } from '@minko-fe/client-logger'
-const logger = new ClientLogger('label', false)
+import { Logger } from 'picologger'
+const logger = new Logger('label', false)
 
 logger.log({ text: 'some-text', type: 'success' })
 ```
@@ -14,8 +14,8 @@ logger.log({ text: 'some-text', type: 'success' })
 
 
 ```ts
-import { ClientLogger } from '@minko-fe/client-logger'
-const logger = new ClientLogger('label', true)
+import { Logger } from 'picologger'
+const logger = new Logger('label', true)
 
 const logStr = logger.log({ text: 'some-text', type: 'success' })
 

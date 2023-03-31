@@ -19,7 +19,7 @@ interface TextLogType {
   color?: string
 }
 
-export class ClientLogger {
+export class Logger {
   private label: TextLogType | undefined
   private silent = false
 
