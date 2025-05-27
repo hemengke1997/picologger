@@ -1,8 +1,6 @@
 import type { CSSProperties } from '@minko-fe/style-object-to-string'
 import { styleObjectToString } from '@minko-fe/style-object-to-string'
 
-export { logTimeInfo } from './builtIn/logTimeInfo'
-
 // Taken from https://tailwindcss.com/docs/customizing-colors
 const colors = {
   info: '#3b82f6',

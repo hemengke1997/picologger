@@ -1,6 +1,6 @@
 import dayjs from 'dayjs'
-import utc from 'dayjs/plugin/utc.js' // https://github.com/iamkun/dayjs/issues/1167
 import tz from 'dayjs/plugin/timezone.js'
+import utc from 'dayjs/plugin/utc.js' // https://github.com/iamkun/dayjs/issues/1167
 import { Logger } from '..'
 
 dayjs.extend(utc)
