@@ -42,7 +42,6 @@
     "bump": "bumpp package.json -c -p -t --all -x \"pnpm run changelog\""
   },
   "dependencies": {
-    "@minko-fe/style-object-to-string": "^1.0.0",
     "dayjs": "^1.11.13"
   },
   "devDependencies": {

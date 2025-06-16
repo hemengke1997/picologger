@@ -1,6 +1,3 @@
-import type { CSSProperties } from '@minko-fe/style-object-to-string'
-import { styleObjectToString } from '@minko-fe/style-object-to-string'
-
 // Taken from https://tailwindcss.com/docs/customizing-colors
 const colors = {
   info: '#3b82f6',
@@ -28,19 +25,19 @@ export class Logger {
 
   private styleize(item: TextLogType, isFirst: boolean, isLast: boolean) {
     const { text, color, type } = item
-    const style: CSSProperties = {}
+    const style: string[] = []
 
     if (isFirst) {
-      style.borderRadius = '4px 0 0 4px'
+      style.push('border-radius: 4px 0 0 4px')
     } else if (isLast) {
-      style.borderRadius = '0 4px 4px 0'
+      style.push('border-radius: 0 4px 4px 0')
     }
-    style.padding = '2px 4px'
-    style.background = type ? colors[type] : color
-    style.color = '#fff'
+
+    style.push('padding: 2px 4px', `background: ${type ? colors[type] : color || '#000'}`, 'color: #fff')
+
     return {
       text,
-      style,
+      style: style.join('; '),
     }
   }
 
@@ -56,7 +53,7 @@ export class Logger {
 
     r.push(c)
     args.forEach((item) => {
-      r.push(styleObjectToString(item.style) ?? '')
+      r.push(item.style ?? '')
     })
 
     if (this.silent) return r
